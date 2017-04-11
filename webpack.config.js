@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const DIST_DIR = path.resolve(__dirname, "build");
 const SRC_DIR = path.resolve(__dirname, "app");
 const htmlWebpackPluginConfig = new HtmlWebpackPlugin({
-  template: SRC_DIR + "/index.html", //from where to pick file
+  template: "index.html", //from where to pick file
   filename: DIST_DIR + "/index.html", //where to copy that file
   inject: "body" //where to inject that file
 });
